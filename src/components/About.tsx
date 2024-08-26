@@ -2,14 +2,13 @@
 import React from 'react';
 import { headerItems, userInfo } from '@/constants/constant';
 import Image from 'next/image';
-import { Link as ScrollLink } from 'react-scroll';
 import dynamic from 'next/dynamic';
 
 
 const About = () => {
   return (
     <section id={headerItems.about.page}
-     className='h-screen flex flex-col text-center justify-center items-center md:flex-row md:text-start'>
+     className='h-screen flex flex-row text-center justify-center items-center mt-8 md:flex-row md:text-start'>
           <div className='m-4 md:ml-20 sm:ml-12 md:w-1/2'>
           <h1 className='text-6xl my-6'>About</h1>
           <h2 className='text-3xl my-4'>
@@ -18,13 +17,6 @@ const About = () => {
           <p className='[&>p]:mt-5'
           dangerouslySetInnerHTML={{__html: userInfo.about}}>
           </p> 
-          <ScrollLink
-          to={headerItems.contact.page}
-          className='bg-yellow-600 w-20 h-10 mt-2 flex items-center justify-center rounded text-neutral-200 cursor-pointer'
-          spy={true}
-          smooth={true}
-          
-          >Contact</ScrollLink>
           </div>
 
           <div className='flex flex-col justify-center items-center text-center'>

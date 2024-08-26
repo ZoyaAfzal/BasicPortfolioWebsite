@@ -26,16 +26,23 @@ const Intro = () => {
           <h1 className='text-2xl mt-5 md:text-3xl'>
             Hi , I&#39;m <span className='text-yellow-600 text-3xl md:text-4xl'>{userInfo.name}</span>
           </h1>
-          <p className='my-4'
+          <p className='mt-4 mb-4'
           dangerouslySetInnerHTML={{__html: userInfo.heading}}
           />
           <ScrollLink
           to={headerItems.about.page}
-          className='bg-yellow-600 w-20 h-10 flex items-center justify-center rounded text-neutral-200 cursor-pointer'
+          className='bg-yellow-600 px-2 py-1 text-sm flex-row-reverse mx-2 justify-center rounded text-neutral-200 cursor-pointer'
           spy={true}
           smooth={true}
-          
-          >About</ScrollLink>  
+          >About</ScrollLink> 
+          <ScrollLink
+          to={headerItems.contact.page}
+          className='bg-yellow-600 px-2 py-1 text-sm flex-row-reverse items-center justify-center rounded text-neutral-200 cursor-pointer'
+          spy={true}
+          smooth={true}
+          >Contact</ScrollLink> 
+
+
 
         </div>
     </section>
