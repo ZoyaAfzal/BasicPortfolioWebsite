@@ -20,6 +20,7 @@ const About = () => {
           </p> 
           <ScrollLink
           to={headerItems.contact.page}
+          key={headerItems.contact.page}
           className='bg-yellow-600 w-20 h-10 mt-2 flex items-center justify-center rounded text-neutral-200 cursor-pointer'
           spy={true}
           smooth={true}
