@@ -20,7 +20,6 @@ const About = () => {
           </p> 
           <ScrollLink
           to={headerItems.contact.page}
-          key={headerItems.contact.page}
           className='bg-yellow-600 w-20 h-10 mt-2 flex items-center justify-center rounded text-neutral-200 cursor-pointer'
           spy={true}
           smooth={true}
@@ -38,8 +37,10 @@ const About = () => {
             />
         <div className='mt-3 w-3/4 break-words'>
             {
-                userInfo.skills.map(skill => (
-                    <span className='bg-gray-300 m-1 p-2 text-sm inline-block rounded-md'>{skill}</span>
+                userInfo.skills.map((skill) => ( 
+                < span 
+                key= {skill}
+                className='bg-gray-300 m-1 p-2 text-sm inline-block rounded-md' >{skill}</span>
                 ))
             }
         </div>
