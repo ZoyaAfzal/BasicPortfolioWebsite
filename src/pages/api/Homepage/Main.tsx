@@ -1,12 +1,12 @@
 
 import React from "react";
-import Intro from "@/components/Intro";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
+import Intro from "@/components/intro";
+import About from "@/components/about";
+import Contact from "@/components/contact";
 
 const HomePage = () => {
   return (
-    <div className="lg:mx-32 md:mx-4 mt-20">
+    <div className="homepage">
       <Intro />
       <About />
       <Contact />
