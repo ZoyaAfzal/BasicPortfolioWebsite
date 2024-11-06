@@ -22,10 +22,10 @@ const Header = () => {
     return (
     <header className="p-6 flex justify-between fixed top-0 z-10 font-semibold bg-white w-full md:flex">
         <div className="flex justify-between">
-            <h2 className='text-2xl hover:text-teal-600'>{ userInfo.name }</h2>
+            <h2 className='text-2xl hover:text-teal-600 font-bold'>{ userInfo.name }</h2>
             < MdOutlineMenuOpen
-             size={30}
-             className="md:hidden" 
+             size={35}
+             className="md:hidden sm:ml-10 ml-40" 
              onClick={() => showNavitems(prevState => !prevState)}
              />
         </div>
