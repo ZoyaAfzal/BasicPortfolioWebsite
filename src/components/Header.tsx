@@ -25,7 +25,7 @@ const Header = () => {
             <h2 className='text-2xl hover:text-teal-600 font-bold'>{ userInfo.name }</h2>
             < MdOutlineMenuOpen
              size={35}
-             className="md:hidden sm:ml-10 ml-40" 
+             className="md:hidden" 
              onClick={() => showNavitems(prevState => !prevState)}
              />
         </div>

@@ -31,16 +31,16 @@ const Intro = () => {
           className='mt-4 mb-4'
           dangerouslySetInnerHTML={{__html: userInfo.heading}}
           />
-          <div className="flex lg:space-x-4 md:space-x-4 sm:space-x-1 justify-center md:justify-start sm:mr-52 sm:ml-40 md:-ml-10">
+          <div className="flex lg:space-x-4 md:space-x-4 space-x-1 justify-center md:justify-start sm:mr-52 sm:ml-40 md:-ml-10">
           <ScrollLink
           to={headerItems.about.page}
-          className='bg-teal-600 rounded text-neutral-100 flex w-28 h-10 m-auto items-center justify-center md:m-0 hover:bg-teal-400  md:px-10 md:ml-10'
+          className='bg-teal-600 rounded text-neutral-100 flex w-28 h-10  items-center justify-center md:m-0 hover:bg-teal-400  md:px-10 md:ml-10'
           spy={true}
           smooth={true}
           >About</ScrollLink> 
           <ScrollLink
           to={headerItems.contact.page}
-          className=' sm:mr-10 bg-teal-600 rounded text-neutral-100 flex w-28 h-10 m-auto md:m-0 items-center justify-center hover:bg-teal-400 md:mr-40 md:px-10'
+          className=' sm:mr-10 bg-teal-600 rounded text-neutral-100 flex w-28 h-10  md:m-0 items-center justify-center hover:bg-teal-400 md:mr-40 md:px-10'
           spy={true}
           smooth={true}
           >Contact</ScrollLink> 
