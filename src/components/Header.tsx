@@ -20,21 +20,22 @@ const Header = () => {
 
   
     return (
-    <header className='header'>
-        <div className='header-section'>
-            <h2 className='menu'>{ userInfo.name }</h2>
+    <header className="p-6 flex justify-between fixed top-0 z-10 font-semibold bg-white w-full md:flex">
+        <div className="flex justify-between">
+            <h2 className='text-2xl hover:text-teal-600'>{ userInfo.name }</h2>
             < MdOutlineMenuOpen
              size={30}
-             className='menu-icon'
+             className="md:hidden" 
              onClick={() => showNavitems(prevState => !prevState)}
              />
         </div>
-        <div className= {`{ ${navitem ? 'custom-block' : 'custom-hidden'} headeritems`} id="nav-item">
+        <div className={`mr-8 md:space-x-6 md:block mt-3 md:mt-0 hover:text-teal-600 ${ navitem ? 'block' : 'hidden'}`}>
           {    
                Object.keys(headerItems).map(item => (
                 <ScrollLink
                 to={headerItems[item as keyof NavItems].page}
                  key={headerItems[item as keyof NavItems].label}
+                className="block md:inline-block cursor-pointer"
                  spy={true}
                  smooth={true}
                >{headerItems[item as keyof NavItems].label}</ScrollLink>
