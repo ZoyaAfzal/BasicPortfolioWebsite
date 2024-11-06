@@ -1,0 +1,18 @@
+.homepage{
+    margin: top 5rem;
+}
+
+@media(min-width:1024px){
+    .homepage{
+       margin-left:8rem;
+       margin-right:8rem;
+    }
+}
+
+@media(min-width:768px){
+    .homepage{
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+}

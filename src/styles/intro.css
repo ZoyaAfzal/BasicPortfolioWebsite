@@ -1,0 +1,117 @@
+.gradient-conic {
+    background-image: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops, #6a11cb, #2575fc));
+}
+.gradient-radial {
+        background-image: radial-gradient(circle, var(--tw-gradient-stops, #ff7e5f, #feb47b));
+      }
+  
+
+.home-section{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content: center;
+    align-items:center;
+}
+
+.home-img{
+    border-radius: 50%;  
+    margin-left:8rem; 
+    margin-top: 2rem;
+    --tw-shadow-color: #eab308;  
+    box-shadow: 0 4px 10px -1px var(--tw-shadow-color), 
+                0 2px 4px -2px var(--tw-shadow-color); 
+
+}
+ .intro-section h3{
+    font-size:3.5rem;
+    text-transform:uppercase;
+    margin:0;
+    
+}
+.intro-section h2{
+    font-size: 1.5rem;
+    top:0; 
+  
+}
+.user-info{
+    font-size:1.875rem;
+    line-height: 2.25rem;
+    --tw-text-opacity:1;
+    color:rgb(202 138 4/var(--tw-text-opacity));
+}
+.intro-heading p{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+.intro-btn{
+    align-items: center;
+    padding-left: 0.9rem;
+    padding-right:0.9rem;
+    padding-top:0.38rem;
+    padding-bottom:0.38rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    flex-direction: row-reverse;
+    margin-right: 0.5rem;
+    justify-content: center;
+    border-radius: 0.25rem;
+    cursor:pointer;
+    --tw-bg-opacity:1;
+    background-color:rgb(202 138 4/var(--tw-bg-opacity));
+    --tw-text-opacity:1;
+    color:rgb(229 229 229/var(--tw-text-opacity));
+
+}
+.intro-btn:hover, 
+.introbtn:hover{
+    background-color:#eca84f;
+}
+.introbtn{
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right:0.5rem;
+    padding-top:0.31rem;
+    padding-bottom:0.31rem;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-radius: 0.25rem;
+    cursor:pointer;
+    --tw-bg-opacity:1;
+    background-color:rgb(202 138 4/var(--tw-bg-opacity));
+    --tw-text-opacity:1;
+    color:rgb(229 229 229/var(--tw-text-opacity));
+
+}
+
+
+
+@media(min-width:768px){
+    .home-section{
+        flex-direction:row;
+        text-align:start;
+    }
+    .intro-section{
+        margin-left:5rem;
+        width:50%;
+    }
+    .intro{
+        display:block
+    }
+    .intro-heading{
+        font-size:1.875rem;
+        line-height:2.25rem;
+    }
+    .user-info{
+        font-size:2.25rem;
+        line-height: 2.25rem;
+    }
+}
+
+@media(min-width:640px){
+    .intro-section{
+        margin-left:3rem;
+    }
+
+}

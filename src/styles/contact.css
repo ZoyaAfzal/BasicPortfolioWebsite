@@ -1,0 +1,48 @@
+.contact-section{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:10rem;
+    margin-bottom: 10rem;
+}
+
+.contact-image{
+    margin:auto;
+    align-items: center;
+    border-radius: 0.25rem;
+    margin-bottom:0;
+}
+
+.contact-heading{
+    font-size: 2.75rem;
+    margin-bottom:0.5rem;
+    margin-top:1rem;
+}
+
+.contact-links{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:75%;
+    overflow-wrap: break-word;
+}
+
+.contact-profiles{
+    margin:0.25rem;
+    padding:0.55rem;
+    font-size:0.995rem;
+    line-height:1.25rem;
+    margin-top:1rem;
+    display:inline-block;
+    border-radius: 0.375rem;
+    cursor:pointer;
+    --tw-bg-opcity:1;
+    background-color: rgb(207 138 4/var(--tw-bg-opcity));
+    --tw-text-opacity:1;
+    color:rgb(229 229 229/var(--tw-text-opacity));
+}
